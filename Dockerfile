@@ -8,6 +8,6 @@ RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev ffmpeg media
 
 COPY . .
 
-RUN pip3 install -U -r requirements.txt
+RUN cd Auto*;pip3 install -U -r requirements.txt
 
-RUN bash run.sh
+RUN cd Auto*;bash run.sh
